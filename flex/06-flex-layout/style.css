@@ -5,10 +5,16 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+/* my sallution starts here */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+/* my sallution ends here */
 
 img {
-  width: 600px;
+  max-width: 600px;
 }
 
 button {
@@ -25,3 +31,61 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* my sallution starts here */
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+
+.header,
+.footer {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.right-links {
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+
+button {
+  font-size: large;
+  padding: 10px;
+  margin: 5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
